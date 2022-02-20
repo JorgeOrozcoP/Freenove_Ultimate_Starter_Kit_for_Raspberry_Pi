@@ -21,10 +21,10 @@ def loop():
             GPIO.output(pin, GPIO.LOW)  
             time.sleep(0.1)
             GPIO.output(pin, GPIO.HIGH)
-        for pin in ledPins[::-1]:       # make led(on) move from right to left
-            GPIO.output(pin, GPIO.LOW)  
-            time.sleep(0.1)
-            GPIO.output(pin, GPIO.HIGH)
+        # for pin in ledPins[::-1]:       # make led(on) move from right to left
+            # GPIO.output(pin, GPIO.LOW)  
+            # time.sleep(0.1)
+            # GPIO.output(pin, GPIO.HIGH)
 
 def destroy():
     GPIO.cleanup()                     # Release all GPIO
